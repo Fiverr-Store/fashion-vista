@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+.hero-area{
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-image: url('../img/hero/hero-banner.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 991px) {
+   padding-top: 120px;
+   padding-bottom: 40px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding-top: 100px;
+   padding-bottom: 30px;
+  }
+  .hero-text{
+    h1{
+      font-family: $font-family-os;
+      font-weight: 500;
+      font-size: 60px;
+      color: $title-color;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      span{
+        display: inline-block;
+        background-color: #fed73a;
+        line-height: 1.2;
+        padding: 3px 8px 3px 8px;
+      }
+      @media only screen and (max-width: 1199px) {
+       font-size: 54px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 42px;
+       margin-bottom: 10px;
+      }
+    }
+    p{
+      font-size: 23px;
+      font-weight: 500;
+      color: $title-color;
+      @media only screen and (max-width: 1199px) {
+        font-size: 21px;
+       }
+       @media only screen and (max-width: 767px) {
+        font-size: 19px;
+       }
+    }
+  }
+  .btn-join{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: $title-color;
+    background-color: #fed73a;
+    padding: 2px 18px;
+    border-radius: 50px;
+    margin: 10px 0px;
+  }
+
+  .hero-btns{
+    p{
+      font-size: 16px;
+      color: $text-color;
+      font-weight: 500;
+      margin-bottom: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 15px;
+      }
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      border: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      img{
+        height: 40px;
+        @media only screen and (max-width: 767px) {
+         height: 36px;
+        }
+      }
+      transition: all .2s ease-in;
+      &:hover{
+        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
+      }
+    }
+    h3{
+      font-family: $font-family-os;
+      font-size: 38px;
+      color: $title-color;
+      text-transform: uppercase;
+      margin-top: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 32px;
+      }
+    }
+    .link-text{
+      text-decoration: underline;
+      font-size: 16px;
+      font-weight: 600;
+      color: $title-color;
+      padding-left: 6px;
+      transition: all .2s ease-in;
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+
+}

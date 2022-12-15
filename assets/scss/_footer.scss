@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# main-footer
+--------------------------------------------------------------*/
+.main-footer{
+ padding: 30px 0px;
+ .footer-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media only screen and (max-width: 482px) {
+   display: block;
+   text-align: center;
+  }
+ }
+ .legal-text{
+  p{
+    font-size: 14px;
+    color: $text-color;
+    font-weight: 500;
+    @media only screen and (max-width: 482px) {
+     margin-bottom: 12px;
+    }
+  }
+ }
+ .footer-social{
+  a{
+    text-decoration: none;
+    display: inline-block;
+    img{
+      height: 28px;
+    }
+  }
+ }
+}

@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	// background-color: $bg-white;
+	box-shadow: 0 0 0 0 transparent, 0 0 0 0 rgba(0, 0, 0, 0.1),
+		0 0 0 0 transparent;
+	transition: all 0.3s ease-out 0s;
+}
+
+.navbar {
+	padding: 0;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+ padding-top: 5px;
+	.navbar-brand {
+		padding: 0;
+		text-decoration: none;
+		font-size: 22px;
+		font-weight: 600;
+		color: $title-color;
+		img {
+			max-height: 120px;
+			transition: all 0.4s ease-in-out;
+			@media only screen and (max-width: 1199px) {
+				max-height: 100px;
+			}
+			@media only screen and (max-width: 767px) {
+				max-height: 100px;
+			}
+      @media only screen and (max-width: 482px) {
+       max-height: 90px;
+      }
+		}
+	}
+  .btn-login{
+    display: inline-flex;
+    text-decoration: none;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 9px 26px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in;
+     box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.611);
+    &:hover{
+      background-color: rgb(33, 32, 32);
+      box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
+    }
+    @media only screen and (max-width: 1199px) {
+     padding: 9px 22px;
+    }
+    @media only screen and (max-width: 767px) {
+     padding: 7px 20px;
+     font-size: 14px;
+    }
+  }
+}
