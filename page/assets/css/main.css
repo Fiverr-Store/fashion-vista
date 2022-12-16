@@ -284,346 +284,131 @@ h6 a {
 }
 
 /*--------------------------------------------------------------
-# navbar
+# nav-logo
 --------------------------------------------------------------*/
-.navbar-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  -webkit-box-shadow: 0 0 0 0 transparent, 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 transparent;
-          box-shadow: 0 0 0 0 transparent, 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 transparent;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-
-.navbar {
-  padding: 0;
-  position: relative;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+.nav-logo {
+  text-align: start;
   padding-top: 5px;
 }
-.navbar .navbar-brand {
-  padding: 0;
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: 600;
-  color: #222222;
+.nav-logo img {
+  max-height: 130px;
 }
-.navbar .navbar-brand img {
-  max-height: 120px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-@media only screen and (max-width: 1199px) {
-  .navbar .navbar-brand img {
-    max-height: 100px;
+@media only screen and (max-width: 991px) {
+  .nav-logo img {
+    max-height: 110px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .navbar .navbar-brand img {
+  .nav-logo img {
     max-height: 100px;
-  }
-}
-@media only screen and (max-width: 482px) {
-  .navbar .navbar-brand img {
-    max-height: 90px;
-  }
-}
-.navbar .btn-login {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-decoration: none;
-  border: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 9px 26px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 600;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  -webkit-box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.611);
-          box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.611);
-}
-.navbar .btn-login:hover {
-  background-color: rgb(33, 32, 32);
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
-}
-@media only screen and (max-width: 1199px) {
-  .navbar .btn-login {
-    padding: 9px 22px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .navbar .btn-login {
-    padding: 7px 20px;
-    font-size: 14px;
   }
 }
 
 /*--------------------------------------------------------------
 # hero-area
 --------------------------------------------------------------*/
-.hero-area {
-  padding-top: 150px;
+.hero-area-new {
+  padding-top: 0px;
   padding-bottom: 50px;
   background-image: url("../img/hero/hero-banner.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 @media only screen and (max-width: 991px) {
-  .hero-area {
-    padding-top: 120px;
+  .hero-area-new {
+    padding-top: 0px;
     padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .hero-area {
-    padding-top: 100px;
+  .hero-area-new {
+    padding-top: 0px;
     padding-bottom: 30px;
   }
 }
-.hero-area .hero-text h1 {
+.hero-area-new .hero-text h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 65px;
   color: #222222;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
-.hero-area .hero-text h1 span {
+.hero-area-new .hero-text h1 span {
   display: inline-block;
   background-color: #fed73a;
   line-height: 1.2;
   padding: 3px 8px 3px 8px;
 }
 @media only screen and (max-width: 1199px) {
-  .hero-area .hero-text h1 {
+  .hero-area-new .hero-text h1 {
     font-size: 54px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .hero-area .hero-text h1 {
+  .hero-area-new .hero-text h1 {
     font-size: 42px;
     margin-bottom: 10px;
   }
 }
-.hero-area .hero-text p {
+.hero-area-new .hero-text p {
   font-size: 23px;
   font-weight: 500;
   color: #222222;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 @media only screen and (max-width: 1199px) {
-  .hero-area .hero-text p {
+  .hero-area-new .hero-text p {
     font-size: 21px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .hero-area .hero-text p {
+  .hero-area-new .hero-text p {
     font-size: 19px;
   }
 }
-.hero-area .btn-join {
+.hero-area-new .hero-text p a {
+  text-decoration: underline;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 500;
   color: #222222;
-  background-color: #fed73a;
-  padding: 2px 18px;
-  border-radius: 50px;
-  margin: 10px 0px;
 }
-.hero-area .hero-btns p {
-  font-size: 16px;
-  color: 525252;
-  font-weight: 500;
-  margin-bottom: 16px;
+.hero-area-new .hero-btns {
+  padding-top: 20px;
 }
-@media only screen and (max-width: 767px) {
-  .hero-area .hero-btns p {
-    font-size: 15px;
-  }
-}
-.hero-area .hero-btns a {
+.hero-area-new .hero-btns a {
   display: inline-block;
   text-decoration: none;
   border: 0;
-  border-radius: 8px;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.hero-area .hero-btns a img {
-  height: 40px;
+@media only screen and (max-width: 767px) {
+  .hero-area-new .hero-btns a {
+    border-radius: 8px;
+  }
+}
+.hero-area-new .hero-btns a img {
+  height: 70px;
 }
 @media only screen and (max-width: 767px) {
-  .hero-area .hero-btns a img {
-    height: 36px;
+  .hero-area-new .hero-btns a img {
+    height: 40px;
   }
 }
-.hero-area .hero-btns a:hover {
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
+.hero-area-new .hero-btns a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
-.hero-area .hero-btns h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 38px;
-  color: #222222;
-  text-transform: uppercase;
-  margin-top: 16px;
-}
-@media only screen and (max-width: 767px) {
-  .hero-area .hero-btns h3 {
-    font-size: 32px;
-  }
-}
-.hero-area .hero-btns .link-text {
-  text-decoration: underline;
-  font-size: 16px;
-  font-weight: 600;
-  color: #222222;
-  padding-left: 6px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.hero-area .hero-btns .link-text:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/*--------------------------------------------------------------
-# video-section
---------------------------------------------------------------*/
-.video-section {
-  padding: 80px 0px;
-}
-@media only screen and (max-width: 1199px) {
-  .video-section {
-    padding: 60px 0px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .video-section {
-    padding: 40px 0px;
-  }
-}
-.video-section .v-txt h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 65px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.video-section .v-txt h2 span {
-  display: inline-block;
-  color: #8c82c0;
-}
-@media only screen and (max-width: 1199px) {
-  .video-section .v-txt h2 {
-    font-size: 54px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .video-section .v-txt h2 {
-    font-size: 42px;
-  }
-}
-
-/*--------------------------------------------------------------
-# contact
---------------------------------------------------------------*/
-.contact {
-  background-image: url("../img/hero/hero-banner.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 100px 0px;
-}
-@media only screen and (max-width: 1199px) {
-  .contact {
-    padding: 60px 0px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .contact {
-    padding: 40px 0px;
-  }
-}
-.contact .con-txt h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 85px;
-  font-weight: 500;
-  color: #222222;
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 1199px) {
-  .contact .con-txt h2 {
-    font-size: 54px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .contact .con-txt h2 {
-    font-size: 42px;
-  }
-}
-
-.frm-grp {
-  margin-bottom: 16px;
-}
-.frm-grp label {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-@media only screen and (max-width: 767px) {
-  .frm-grp label {
-    font-size: 15px;
-  }
-}
-.frm-grp .form-control, .frm-grp .form-select {
-  border: 1px solid #000000;
-  height: 43px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.btn-submit {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #56e649;
-  padding: 11px 50px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 500;
-  background-color: transparent;
-  color: #222222;
-  margin-top: 12px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.btn-submit:hover, .btn-submit:focus {
-  background-color: #56e649;
-  color: #222222;
-}
-
-.privacy-link {
-  text-decoration: underline;
-  color: #222222;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 12px;
-  padding-left: 10px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.privacy-link:hover {
-  text-decoration: underline;
+.hero-area-new .img-prox {
+  width: 100%;
+  max-width: 600px;
 }
 
 /*--------------------------------------------------------------
@@ -666,3 +451,4 @@ h6 a {
 .main-footer .footer-social a img {
   height: 28px;
 }
+/*# sourceMappingURL=main.css.map */

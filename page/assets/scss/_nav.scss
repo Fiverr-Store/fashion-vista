@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# nav-logo
+--------------------------------------------------------------*/
+
+.nav-logo{
+  text-align: start;
+  padding-top: 5px;
+  img{
+    max-height: 130px;
+    @media only screen and (max-width: 991px) {
+     max-height: 110px;
+    }
+    @media only screen and (max-width: 767px) {
+     max-height: 100px;
+    }
+  }
+}
