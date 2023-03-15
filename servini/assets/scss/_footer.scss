@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# main-footer
+--------------------------------------------------------------*/
+.main-footer{
+ padding: 20px 0px;
+text-align: center;
+background-color: #eee;
+ .legal-text{
+  p{
+    font-size: 14px;
+    color: $text-color;
+    font-weight: 500;
+    @media only screen and (max-width: 482px) {
+     margin-bottom: 12px;
+    }
+  }
+ }
+
+}

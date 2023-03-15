@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.navbar {
+	padding: 0;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+	padding-top: 30px;
+  @media only screen and (max-width: 991px) {
+   justify-content: center;
+   padding-top: 16px;
+  }
+	.navbar-brand {
+		padding: 0;
+		text-decoration: none;
+
+		img {
+			height: 45px;
+			transition: all 0.4s ease-in-out;
+			@media only screen and (max-width: 1199px) {
+				height: 40px;
+			}
+			@media only screen and (max-width: 991px) {
+				height: 40px;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 40px;
+			}
+		}
+	}
+}
